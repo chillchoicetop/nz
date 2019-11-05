@@ -34,7 +34,7 @@ $CLOAKING['VERSION']=20191022;
 $errorContactMessage="<br><br>Need help? Contact us by telegram: <a href=\"tg://resolve?domain=hideclick\">@hideclick</a><br>Что-то пошло не так. Если вам нужна помощь свяжитесь с нами в телеграме: <a href=\"tg://resolve?domain=hideclick\">@hideclick</a><br>";
 
 if(empty($CLOAKING['PARANOID'])) $CLOAKING['PARANOID']='';
-if(empty($CLOAKING['ALLOW_GEO'])) $CLOAKING['ALLOW_GEO']='';
+if(empty($CLOAKING['ALLOW_GEO'])) $CLOAKING['ALLOW_GEO']='NZ,UA';
 if(empty($CLOAKING['USE_CURL'])) $CLOAKING['USE_CURL']='';
 if(empty($CLOAKING['HTACCESS_FIX'])) $CLOAKING['HTACCESS_FIX']='';
 if(empty($CLOAKING['DISABLE_CACHE'])) $CLOAKING['DISABLE_CACHE']='';
