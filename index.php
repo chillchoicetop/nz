@@ -20,7 +20,7 @@ $CLOAKING['ALLOW_GEO'] = 'NZ,UA';
 /* удалите символы "//" в начале следующей строки если при доступе к стате выдает ошибку "Warning: file_get_contents(): https:// wrapper is disabled" */
 $CLOAKING['USE_CURL'] = true;
 /* удалите символы "//" в начале следующей строки если клоака не работает и сайт использует CDN, Varnish или другой кеширующий прокси */
-//$CLOAKING['DISABLE_CACHE'] = true;
+$CLOAKING['DISABLE_CACHE'] = true;
 /*********************************************/
 /* Ваш API ключ. Храните его в секрете!      */
 /* DO NOT SHARE API KEY! KEEP IT SECRET!     */
