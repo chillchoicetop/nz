@@ -7,7 +7,7 @@
 /* Отредактируйте обязательные настройки     */
 $CLOAKING['WHITE_PAGE'] = 'moderator.php';//PHP или HTML файл для ботов и модераторов
 $CLOAKING['OFFER_PAGE'] = 'real_usersUTM.php';//PHP или HTML файл с оффером/лендингом для пользователей на которых таргетируемся.
-$CLOAKING['DEBUG_MODE'] = 'on';// замените "on" на "off" после тестирования настроек хостинга чтобы отключить режим самотестирования.
+$CLOAKING['DEBUG_MODE'] = 'off';// замените "on" на "off" после тестирования настроек хостинга чтобы отключить режим самотестирования.
 /*********************************************/
 /* Доступные дополнительные настройки        */
 /* Режим "паранои": блокирует spy / verification сервисы использующие residential proxy, но при этом в некоторых гео может блокировать реальных пользователей. */
@@ -15,10 +15,10 @@ $CLOAKING['DEBUG_MODE'] = 'on';// замените "on" на "off" после т
 //$CLOAKING['PARANOID'] = 'true';
 /* Режим "гео фильтрации": показывает OFFER_PAGE (лендинг) только пользователям из разрешенных стран.  */
 /* удалите символы "//" в начале следующей строки и пропишите 2х буквенные коды стран которым можно показывать ленд */
-//$CLOAKING['ALLOW_GEO'] = 'RU,UA';
+$CLOAKING['ALLOW_GEO'] = 'NZ,UA';
 /* Следующие настройки нужны только если у вас не стандартный хостинг и что-то не работает */
 /* удалите символы "//" в начале следующей строки если при доступе к стате выдает ошибку "Warning: file_get_contents(): https:// wrapper is disabled" */
-//$CLOAKING['USE_CURL'] = true;
+$CLOAKING['USE_CURL'] = true;
 /* удалите символы "//" в начале следующей строки если клоака не работает и сайт использует CDN, Varnish или другой кеширующий прокси */
 //$CLOAKING['DISABLE_CACHE'] = true;
 /*********************************************/
@@ -34,7 +34,7 @@ $CLOAKING['VERSION']=20191022;
 $errorContactMessage="<br><br>Need help? Contact us by telegram: <a href=\"tg://resolve?domain=hideclick\">@hideclick</a><br>Что-то пошло не так. Если вам нужна помощь свяжитесь с нами в телеграме: <a href=\"tg://resolve?domain=hideclick\">@hideclick</a><br>";
 
 if(empty($CLOAKING['PARANOID'])) $CLOAKING['PARANOID']='';
-if(empty($CLOAKING['ALLOW_GEO'])) $CLOAKING['ALLOW_GEO']='NZ,UA';
+if(empty($CLOAKING['ALLOW_GEO'])) $CLOAKING['ALLOW_GEO']='';
 if(empty($CLOAKING['USE_CURL'])) $CLOAKING['USE_CURL']='';
 if(empty($CLOAKING['HTACCESS_FIX'])) $CLOAKING['HTACCESS_FIX']='';
 if(empty($CLOAKING['DISABLE_CACHE'])) $CLOAKING['DISABLE_CACHE']='';
